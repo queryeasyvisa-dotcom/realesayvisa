@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Real Easy Visa</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+  
+</head>
+
+<body>
+ <!-- Consultation Modal -->
+  <div class="consultation-modal" id="consultationModal">
+    <div class="consultation-content">
+      <span class="close-consultation" id="closeConsultation">&times;</span>
+      <div class="offer-badge">Special Offer!</div>
+      
+      <div class="consultation-header">
+        <h3>Travel Consultation</h3>
+        <p>Let our experts help you plan your perfect trip</p>
+      </div>
+      
+      <form class="consultation-form">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="" disabled selected>Interested Destination</option>
+            <option value="usa">USA</option>
+            <option value="europe">Europe</option>
+            <option value="asia">Asia</option>
+            <option value="australia">Australia</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select required>
+            <option value="" disabled selected>Travel Type</option>
+            <option value="vacation">Vacation</option>
+            <option value="business">Business</option>
+            <option value="honeymoon">Honeymoon</option>
+            <option value="family">Family Trip</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <textarea rows="3" placeholder="Any specific requirements?"></textarea>
+        </div>
+        <button type="submit">Apply Consultation</button>
+      </form>
+      
+      <p class="text-center mt-3 small" style="font-size: 12px; color:#555;">We respect your privacy and will not share your information</p>
+    </div>
+  </div>
+  
+    <!-- Spinner Start -->
+    <div id="spinner" class="d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+    
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="img/NEW LOGO EASY VISA copy.png" alt="Real Easy Visa" style="height: 60px; width: auto;">
+                <span class="ms-2 text-white fw-bold fs-4">Real EASY VISA</span>
+            </a>
+
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link ctivea">HOME</a>
+                    <div class="nav-item dropdown">
+                        <a href="service.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="WORK VISA.HTML" class="dropdown-item">WORK VISA</a>
+                            <a href="VISIT VISA.HTML" class="dropdown-item">VISIT VISA</a>
+                            <a href="platinum plus woek.html" class="dropdown-item">PLATINUM PLUS WORK PROGRAM</a>
+                            <a href="New zilad Program.html" class="dropdown-item">NEW ZEALAND PROGRAM</a>
+                            <a href="Arab Gold Program.html" class="dropdown-item">ARAB GOLD PROGRAM</a>
+                            <a href="US Blue Program.html" class="dropdown-item">USA BLUE PROGRAM</a>
+                            <a href="UK CHARITY PROGRAM.html" class="dropdown-item">UK CHARITY PROGRAM</a>
+                            <a href="RESIDENCY PROGRAM.html" class="dropdown-item">E-RESIDENCY PROGRAM</a>
+                            <a href="COURES.html" class="dropdown-item">COURSES</a>
+                        </div>
+                    </div>
+                    <a href="OMRAH.HTML" class="nav-item nav-link">UMRAH</a>
+                    <a href="packages.html" class="nav-item nav-link">PACKAGES</a>
+                    <a href="about.html" class="nav-item nav-link">ABOUT</a>
+                    <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                </div>
+     <a href="Book Now Assiment.HTML" class="btn btn-secondary rounded-pill py-2 px-4 ms-lg-4 " style="background-color:  #c24e00;"> Assessment  Book </a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+    <!-- Carousel Start -->
+    <div class="carousel-header">
+        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselId" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="2"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="3"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="4"></li>
+                <li data-bs-target="#carouselId" data-bs-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Office Work Visa -->
+                <div class="carousel-item active" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/Your\ Trusted\ Immigration\ Partner.jpg'); background-size: cover; background-position: center; min-height: 600px;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-content text-center">                       
+                            <h1 class="display-2 text-white mb-2">REAL EASY VISA</h1>
+                            <h4 class="text-white fw-bold mb-2">Your Trusted Immigration Partner</h4>
+                            <p class="mb-5 fs-5 text-white">Real Easy Visa offers reliable, transparent, and expert visa consultancy services. Whether you dream to work, travel, or settle abroad — we make it real, and easy.</p>
+                            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                                <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+                                <a href="contact.html" class="btn btn-secondary">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/picture\ -\ c011\ -\ business\ management\ office.jpg'); background-size: cover; background-position: center; min-height: 600px;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-content text-center">
+                            <h1 class="display-2 text-white mb-4">WORK PERMITS</h1>
+                            <h4 class="text-white fw-bold mb-4">Secure Your Future with Global Job Opportunities</h4>
+                            <p class="mb-5 fs-5 text-white">Real Easy Visa helps professionals obtain work visas for top countries. End-to-end support, fast processing, and document accuracy – all handled by our experts.</p>
+                            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                                <a href="WORK VISA.HTML" class="btn btn-primary">Apply for Work Visa</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arab Country -->
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/visa\ \ given.jpg'); background-size: cover; background-position: center; min-height: 600px;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-content text-center">
+                            <h1 class="display-2 text-white mb-4">VISIT VISA</h1>
+                            <h4 class="text-white fw-bold mb-4">Plan Your Next Trip with Ease</h4>
+                            <p class="mb-5 fs-5 text-white">Whether it's for family, business, or tourism get visit visas to the UAE, UK, USA, Canada, Europe, and more. Simple process, quick approvals.</p>
+                            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                                <a href="VISIT VISA.HTML" class="btn btn-primary">Get Visit Visa Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Student Visa -->
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/Visa-Assessment.jpg'); background-size: cover; background-position: center; min-height: 600px;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-content text-center">
+                            <h1 class="display-2 text-white mb-4">IMMIGRATION</h1>
+                            <h4 class="text-white fw-bold mb-4">Want to Settle Abroad</h4>
+                            <p class="mb-5 fs-5 text-white">We assess your profile based on eligibility criteria for countries like Canada, Australia, and the UK. Know your chances before you apply.</p>
+                            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                                <a href="Book Now Assiment.HTML" class="btn btn-primary">Check Eligibility Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/Explore\ the\ World\ with\ Us\ 3.jpg'); background-size: cover; background-position: center; min-height: 600px;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-content text-center">
+                            <h1 class="display-2 text-white mb-4">TOURS & TRAVEL</h1>
+                            <h4 class="text-white fw-bold mb-4">Explore the World with Us</h4>
+                            <p class="mb-5 fs-5 text-white">Book affordable and luxurious travel packages for Turkey, Dubai, Malaysia, Europe, and more. Flights, hotels, sightseeing all included.</p>
+                            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                                <a href="tour.html" class="btn btn-primary">Browse Tour Packages</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-item" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('img/MAKHA1.jpg'); background-size: cover; background-position: center; min-height: 600px;">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center">
+                        <div class="carousel-content text-center">
+                            <h1 class="display-2 text-white mb-4">UMRAH VISA</h1>
+                            <h4 class="text-white fw-bold mb-4">Your Spiritual Journey Starts Here</h4>
+                            <p class="mb-5 fs-5 text-white">From visa processing to hotel bookings in Makkah & Madinah, we offer all-in-one Umrah services so you can focus on your Ibadah.</p>
+                            <div class="d-flex gap-3 flex-wrap justify-content-center">
+                                <a href="OMRAH.HTML" class="btn btn-primary">Book Umrah Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+    <!-- Social Media Bar -->
+<div class="social-bar-scroll">
+  <a href="https://www.youtube.com/@EasyVisa" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/easyvisachannel" class="facebook"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.tiktok.com/discover/kaiserkhanpersonal" class="tiktok"><i class="fab fa-tiktok"></i></a>
+  <a href="https://www.youtube.com/@EasyVisa" class="youtube"><i class="fab fa-youtube"></i></a>
+</div>
+
+
+    <!-- About Start -->
+    <div class="container-fluid about py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5">
+                    <div class="h-100" style="border: 50px solid; border-color: transparent #A8571F transparent #080838">
+                        <img src="images/3,3.png" class="img-fluid w-100 h-100" alt="About Us" style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-7" style="background: linear-gradient(rgba(255, 255, 255, .8), rgba(255, 255, 255, .8)), url(img/about-img-1.png);">
+                    <h5 class="section-about-title pe-3">About Us</h5>
+                    <h1 class="mb-4">Welcome to <span class="" style="color: #080838;">REAL EASY VISA</span></h1>
+                    <p class="mb-4">
+                        At REAL EASY VISA, we are dedicated to turning your dreams into reality. 
+                        Whether your goal is a Study Visa, Work Permit, Business Travel, or Tourist Visa – 
+                        our expert team provides complete guidance and support at every step.
+                    </p>
+                    <p class="mb-4">
+                        We offer fast, reliable, and transparent services to make your visa process 
+                        simple, stress-free, and successful. Our mission is to give you access to 
+                        global opportunities and make your journey smoother and more enjoyable.
+                    </p>
+                    <div class="row gy-2 gx-4 mb-4">
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Work & Study Visa Guidance</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Business & Tourist Visa Support</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Expert Consultation & Counseling</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Fast & Hassle-Free Processing</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right me-2"></i>Global Visa Solutions</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right  me-2"></i>24/7 Customer Assistance</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Services Start -->
+<div class="container-fluid about py-5" style="background-color: rgb(213, 217, 221)">
+    <div class="container py-5">
+       <div class="services-heading text-center mx-auto mb-5">
+    <h2 class="section-title px-3">SERVICES</h2>
+    <h1 class="main-title">Our Premium Services</h1>
+    <p class="description">
+        Choose from our wide range of visa and career programs designed for your success abroad.
+    </p>
+</div>
+
+        <div class="row g-4">
+            <!-- Service Item -->
+            <div class="col-md-6">
+                <div class="service-card text-center p-4 rounded shadow h-100 d-flex flex-column justify-content-between" style="background-color: #A8571F;">
+                    <i class="fas fa-briefcase fa-2x mb-3" style="color: white"></i>
+                    <h1 class="mb-3 text-white  text-align"><b>PLATINUM PLUS WORK VISA</b></h1>
+                    <p class="small text-white text-align"><b>Premium program for professionals seeking high skill<br> 
+                        jobs with fast-track processing and priority placement</b></p>
+                   <a href="platinum plus woek.html" 
+   class="btn btn-sm mt-3 text-white fw-bold" 
+   style="background-color:#080838; border-color:#080838;">
+   Learn More
+</a>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-md-6">
+                <div class="service-card text-center p-4 rounded shadow h-100 d-flex flex-column justify-content-between" style="background-color:#080838;">
+                    <i class="fas fa-plane-departure fa-2x mb-3" style="color: white;"></i>
+                    <h1 class="mb-3 text-white" ><b>VISIT VISA</b></h1>
+                    <p class="small text-white"><b>Fast and hassle-free visit visas for tourism, family<br>
+                        or business trips with smooth and quick processing.</b></p>
+                    <a href="VISIT VISA.HTML" class="btn btn-warning btn-sm mt-3 text-white fw-bold"  style="background-color: #A8571F; border-color: #A8571F">Learn More</a>
+                </div>
+            </div>
+
+            <!-- Service Item -->
+            <div class="col-md-6">
+                <div class="service-card text-center p-4 rounded shadow h-100 d-flex flex-column justify-content-between" style="background-color: #080838">
+                    <i class="fas fa-gem fa-2x mb-3 text-white" style="color: white;"></i>
+                    <h1 class="mb-3 text-white" ><b>ARAB GOLD PROGRAM</b></h1>
+                    <p class="small text-white"><b>Exclusive package for Middle East seekers<br>
+                      Includes work permits, accommodation & relocation guidance. </b></p>
+                    <a href="Arab Gold Program.html" class="btn btn-warning btn-sm mt-3 text-white fw-bold"  style="background-color:#A8571F; border-color:#A8571F">Learn More</a>
+                </div>
+            </div>
+             <!-- Service Item -->
+            <div class="col-md-6">
+                <div class="service-card text-center p-4 rounded shadow h-100 d-flex flex-column justify-content-between" style="background-color:  #A8571F">
+                    <i class="fas fa-briefcase fa-2x mb-3" style="color: #080838 "></i>
+                    <h1 class="mb-3 text-white"><b>USA BLUE PROGRAM</b></h1>
+                    <p class="small text-white text-align"><b>Perfect for students & skilled workers moving to the USA.<br> 
+                       </b>Visa guidance, cultural orientation, and career support.</p>
+                   <a href="US Blue Program.html" 
+   class="btn btn-sm mt-3 text-white fw-bold" 
+   style="background-color:#080838; border-color:#080838;">
+   Learn More
+</a>
+  </div>
+ </div>
+      <!-- Service Item -->
+            <div class="col-md-6">
+                <div class="service-card text-center p-4 rounded shadow h-100 d-flex flex-column justify-content-between" style="background-color: #A8571F;">
+                    <i class="fas fa-hands-helping fa-2x mb-3" style="color: white "></i>
+                    <h1 class="mb-3 text-white"><b>UK CHARITY PROGRAM</b></h1>
+                    <p class="small text-white text-align"><b>Volunteer in UK charity projects, support communities 
+                        & gain cultural exposure while making an impact..<br> 
+                       </b></p>
+                   <a href="UK CHARITY PROGRAM.html" 
+   class="btn btn-sm mt-3 text-white fw-bold" 
+   style="background-color:#080838; border-color:#080838;">
+   Learn More
+</a>
+  </div>
+ </div>
+
+     <!-- Service Item -->
+            <div class="col-md-6">
+                <div class="service-card text-center p-4 rounded shadow h-100 d-flex flex-column justify-content-between" style="background-color:#080838;">
+                    <i class="fas fa-id-card fa-2x mb-3" style="color: white;"></i>
+                    <h1 class="mb-3 text-white" ><b>E-RESIDENCY</b></h1>
+                    <p class="small text-white"><b>Manage your business online worldwide with global access, <br>
+                      digital identity & simplified solutions</b></p>
+                    <a href="RESIDENCY PROGRAM.html" class="btn btn-warning btn-sm mt-3 text-white fw-bold"  style="background-color:#A8571F; border-color:#A8571F;">Learn More</a>
+                </div>
+            </div>
+
+        <!-- Service More Button -->
+        <div class="col-12 text-center mt-5">
+            <a class="btn btn-warning rounded-pill py-3 px-5 mt-2 text-white fw-bold" href="">See More Services</a>
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+
+  <!-- Visa Immigration Destination Start -->
+<div class="container-fluid destination py-5">
+  <div class="container py-5">
+    <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+      <h5 class="section-title px-3">Visa & Immigration</h5>
+      <h1 class="mb-0">Explore Visa Destinations</h1>
+      <p class="mt-3">Choose your region for immigration and visa assessment</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Asia -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card visa-card">
+          <div class="destination-img">
+            <img class="img-fluid w-100" src="https://theportuguesetraveler.com/wp-content/uploads/2024/11/colombo-sri-lanka-drone-view-1.jpg.webp" alt="Asia">
+          </div>
+          <div class="card-content">
+            <h3 class="destination-title">Asia Immigration</h3>
+            <p class="destination-desc">Explore immigration opportunities in Asia's top countries.</p>
+            <a href="asia-assessment.html" class="book-btn text-white">Book Assessment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Australia -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card visa-card">
+          <div class="destination-img">
+            <img class="img-fluid w-100" src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?auto=format&fit=crop&w=600&q=80" alt="Australia">
+          </div>
+          <div class="card-content">
+            <h3 class="destination-title">Australia Immigration</h3>
+            <p class="destination-desc">Immigrate to Australia with skilled and business visas.</p>
+            <a href="Book Now Assiment.HTML" class="book-btn text-white">Book Assessment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Canada -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card visa-card">
+          <div class="destination-img">
+            <img class="img-fluid w-100" src="https://thumbs.dreamstime.com/b/canda-cityscape-19729479.jpg" alt="Canada">
+          </div>
+          <div class="card-content">
+            <h3 class="destination-title">Canada Immigration</h3>
+            <p class="destination-desc">Canada offers PR, work permits, and student visas.</p>
+            <a href="Book Now Assiment.HTML" class="book-btn text-white">Book Assessment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Europe -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card visa-card">
+          <div class="destination-img">
+            <img class="img-fluid w-100" src="https://cdn.britannica.com/18/167918-050-72648AF8/Night-view-Romerberg-Germany-Frankfurt-am-Main.jpg" alt="Europe">
+          </div>
+          <div class="card-content">
+            <h3 class="destination-title">Europe Immigration</h3>
+            <p class="destination-desc">Immigration pathways across top European nations.</p>
+            <a href="Book Now Assiment.HTML" class="book-btn text-white">Book Assessment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle East -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card visa-card">
+          <div class="destination-img">
+            <img class="img-fluid w-100" src="https://qosmosys.com/wp-content/uploads/2025/04/riyadh.jpg" alt="Middle East">
+          </div>
+          <div class="card-content">
+            <h3 class="destination-title">Middle East Immigration</h3>
+            <p class="destination-desc">Opportunities in UAE, Saudi Arabia, Qatar, and more.</p>
+            <a href="Book Now Assiment.HTML" class="book-btn text-white">Book Assessment</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- New Zealand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="destination-card visa-card">
+          <div class="destination-img">
+            <img class="img-fluid w-100" src="https://iso.500px.com/wp-content/uploads/2021/03/The-Road-to-Mt.-Cook-By-Elia-Locardi-2.jpg" alt="New Zealand">
+          </div>
+          <div class="card-content">
+            <h3 class="destination-title">New Zealand Immigration</h3>
+            <p class="destination-desc">New Zealand provides visas for work, study, and residency.</p>
+            <a href="Book Now Assiment.HTML" class="book-btn text-white">Book Assessment</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Visa Immigration Destination End -->
+
+
+
+    <!-- Explore Tour Start -->
+    <div class="container-fluid py-5" >
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3  fw-bold" style="color: #080838;">Explore Tour VISA</h5>
+                <h1 class="mb-4 fw-bold">Travel the World with Ease</h1>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <i class="fas fa-globe fa-2x text-primary mb-3"></i>
+                        <p class="mb-0">Discover breathtaking destinations with our hassle-free visa guidance.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-file-signature fa-2x text-success mb-3"></i>
+                        <p class="mb-0">Smooth and quick tourist visa process for stress-free travel.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fas fa-user-shield fa-2x text-danger mb-3"></i>
+                        <p class="mb-0">Travel with confidence backed by expert support and guidance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card Items -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow rounded-3 overflow-hidden tour-card">
+                        <img src="img/explore-tour-1.jpg" class="img-fluid" alt="Australia" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="text-uppercase fw-bold">Australia</h5>
+                            <p class="small">8 Cities | 143+ Tour Places</p>
+                           <a href="apply now.html" class="btn btn-secondary btn-sm text-white">Apply NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow rounded-3 overflow-hidden tour-card">
+                        <img src="img/explore-tour-2.jpg" class="img-fluid" alt="Germany" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="text-uppercase fw-bold">Germany</h5>
+                            <p class="small">12 Cities | 21+ Tour Places</p>
+                      <a href="apply now.html" class="btn btn-secondary btn-sm text-white" >Apply NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow rounded-3 overflow-hidden tour-card">
+                        <img src="img/explore-tour-3.jpg" class="img-fluid" alt="Spain" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="text-uppercase fw-bold">Spain</h5>
+                            <p class="small">9 Cities | 133+ Tour Places</p>
+                     <a href="apply now.html" class="btn btn-secondary btn-sm text-white">Apply NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow rounded-3 overflow-hidden tour-card">
+                        <img src="img/explore-tour-4.jpg" class="img-fluid" alt="Japan" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="text-uppercase fw-bold">Japan</h5>
+                            <p class="small">8 Cities | 137+ Tour Places</p>
+                       <a href="apply now.html" class="btn btn-secondary btn-sm text-white">Apply NOW</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow rounded-3 overflow-hidden tour-card">
+                        <img src="img/explore-tour-5.jpg" class="img-fluid" alt="London" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="text-uppercase fw-bold">London</h5>
+                            <p class="small">17 Cities | 26+ Tour Places</p>
+                      <a href="apply now.html" class="btn btn-secondary btn-sm text-white">Apply NOW</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card border-0 shadow rounded-3 overflow-hidden tour-card">
+                        <img src="img/canada.jpg" class="img-fluid" alt="Canada" style="height: 200px; object-fit: cover;">
+                        <div class="card-body text-center p-4">
+                            <h5 class="text-uppercase fw-bold">Canada</h5>
+                            <p class="small">10 Cities | 120+ Tour Places</p>
+                           <a href="apply now.html" class="btn btn-secondary btn-sm text-white">Apply NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Explore Tour End -->
+
+
+    <!-- Packages Start -->
+    <div class="container-fluid packages py-5"  >
+        <div class="container py-5">
+           <div class="mx-auto text-center mb-5" style="max-width: 900px; ">
+                <h5 class="section-title px-3">Packages</h5>
+                <h1 class="mb-0">Our Premium Visa Packages</h1>
+                <p>Choose the right package for your career & travel journey. Each package comes with step-by-step guidance and full support.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Europe Package -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0 h-100 "  style="background-color: #080838;">
+                        <img src="img/nather land.jpg" class="card-img-top rounded-top" alt="Europe" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Europe Platinum Plus</h5>
+                        </div>
+                        <div class="card-footer d-flex justify-content-between">
+                            <a href="platinum plus woek.html" class="btn btn-secondary btn-sm text-white">Read More</a>
+                            <a href="APPLY  PROGRAM.HTML" class="btn btn-secondary btn-sm text-white">APPLY Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Canada Package -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0 h-100"  style="background-color: #A8571F;" >
+                        <img src="img/Luxembourg.jpg" class="card-img-top rounded-top" alt="Europe" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Visit Visa</h5>
+                        </div>
+                        <div class="card-footer  d-flex justify-content-between">
+                            <a href="VISIT VISA.HTML" class="btn btn-primary btn-sm text-white" >Read More</a>
+                            <a href="apply now.html" class="btn btn-primary btn-sm text-white">APPLY Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- UK Charity Program -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card shadow-lg border-0 h-100"  style="background-color: #080838;">
+                        <img src="img/englind.jpg" class="card-img-top rounded-top" alt="UK" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">UK Charity Program</h5>
+                        </div>
+                        <div class="card-footer  d-flex justify-content-between">
+                            <a href="UK CHARITY PROGRAM.html" class="btn btn-secondary btn-sm text-white">Read More</a>
+                            <a href="APPLY  PROGRAM.HTML" class="btn btn-secondary btn-sm text-white">APPLY Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- Packages End -->
+   <!-- Videos Section Start -->
+    <div class="container-fluid py-5" >
+        <div class="container py-5">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3" style="color: #080838">Our Videos</h5>
+                <h1 class="mb-4">Latest Travel & Visa Guidance Videos</h1>
+                <p class="mb-0">Watch our updated travel and visa guidance videos directly from YouTube.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Video 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item shadow rounded bg-white h-100">
+                        <div class="ratio ratio-16x9 video-container">
+                            <iframe src="https://www.youtube.com/embed/arf5A4r9czY" 
+                                title="Ireland Work Visa 2025 - Pakistan Special Offer" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-dark mt-2">Ireland Work Visa 2025</h5>
+                            <p class="small text-muted">Pakistan Special Offer explained step by step.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-primary">New</span>
+                                <a href="https://www.youtube.com/watch?v=arf5A4r9czY" target="_blank" class="btn btn-sm btn-outline-primary">Watch Full Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item shadow rounded bg-white h-100">
+                        <div class="ratio ratio-16x9 video-container">
+                            <iframe src="https://www.youtube.com/embed/Ul2EzooWHLM" 
+                                title="Brazil Work Visa - Biggest Offer" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-dark mt-2">Brazil Work Visa</h5>
+                            <p class="small text-muted">Biggest offer waiting for you! Apply Today.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-success">Popular</span>
+                                <a href="https://www.youtube.com/watch?v=Ul2EzooWHLM" target="_blank" class="btn btn-sm btn-outline-primary text-white">Watch Full Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item shadow rounded bg-white h-100">
+                        <div class="ratio ratio-16x9 video-container">
+                            <iframe src="https://www.youtube.com/embed/rbDI7uS77Uc" 
+                                title="Canada Biggest Program with Family 2025" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-dark mt-2">Canada Biggest Program</h5>
+                            <p class="small text-muted">Ever with Family 2025</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-warning text-dark">Trending</span>
+                                <a href="https://www.youtube.com/watch?v=rbDI7uS77Uc" target="_blank" class="btn btn-sm btn-outline-primary text-white">Watch Full Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item shadow rounded bg-white h-100">
+                        <div class="ratio ratio-16x9 video-container">
+                            <iframe src="https://www.youtube.com/embed/un_Zwx_d7Eo" 
+                                title="Luxembourg Private Visa - Bring Your Family" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-dark mt-2">Luxembourg Private Visa</h5>
+                            <p class="small text-muted">Bring Your Family on Your Own Visa</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-info">Guide</span>
+                                <a href="https://www.youtube.com/watch?v=un_Zwx_d7Eo" target="_blank" class="btn btn-sm btn-outline-primary text-white">Watch Full Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item shadow rounded bg-white h-100">
+                        <div class="ratio ratio-16x9 video-container">
+                            <iframe src="https://www.youtube.com/embed/LhQhhdAdECI" 
+                                title="Germany Freelance Visa - Important Updates 2025" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-dark mt-2">Germany Freelance Visa</h5>
+                            <p class="small text-muted">Important updates for Freelance in 2025.</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-secondary">Update</span>
+                                <a href="https://www.youtube.com/watch?v=LhQhhdAdECI" target="_blank" class="btn btn-sm btn-outline-primary text-white">Watch Full Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-item shadow rounded bg-white h-100">
+                        <div class="ratio ratio-16x9 video-container">
+                            <iframe src="https://www.youtube.com/embed/_53RLEZKbk0" 
+                                title="UK Farming Jobs 2025 - Seasonal Work Visa from Pakistan" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+                            <div class="video-placeholder">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5 class="text-dark mt-2">UK Farming Jobs 2025</h5>
+                            <p class="small text-muted">Apply for Seasonal Work Visa From Pakistan</p>
+                            <div class="d-flex justify-content-between align-items-center mt-3">
+                                <span class="badge bg-danger">Hot</span>
+                                <a href="https://www.youtube.com/watch?v=_53RLEZKbk0" target="_blank" class="btn btn-sm btn-outline-primary text-white">Watch Full Video</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="https://www.youtube.com/@EasyVisa" target="_blank" class="btn btn-primary btn-lg">
+                    <i class="fab fa-youtube me-2"></i> View More Videos on Our Channel
+                </a>
+            </div>
+        </div>
+    </div>
+  
+    <!-- Videos Section End -->     
+    <a href="https://go.chatway.app/conversations/d7fe5c02-9287-4040-9c62-870a70d7d10e" 
+       target="_blank" 
+       class="chatway-btn">
+       <i class="fas fa-comments"></i>
+    </a>
+    
+ <!-- Footer Start -->
+<div class="container-fluid footer py-5 ">
+    <div class="container py-5">
+        <div class="row g-5">
+
+            <!-- Contact Karachi -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">KARACHI OFFICE</h4>
+                    <a href="#"><i class="fas fa-home me-2"></i> Mustafa Trade Center, PECHS Block 2, Office #A203, 2nd Floor, Tariq Road, Karachi</a>
+                    <a href="mailto:queryeasyvisa@gmail.com"><i class="fas fa-envelope me-2"></i> queryeasyvisa@gmail.com</a>
+                    <a href="tel:02134322678"><i class="fas fa-phone me-2"></i> 021-34322678 / 34323678</a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp me-2"></i> 0323-2902456</a>
+                    <div class="d-flex align-items-center mt-3">
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://www.facebook.com/easyvisachannel" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://www.youtube.com/@EasyVisa" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://www.tiktok.com/discover/kaiserkhanpersonal" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://esender.mfmhost.net/vendor-console/whatsapp/contact/chat" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Lahore -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">LAHORE OFFICE</h4>
+                    <a href="#"><i class="fas fa-home me-2"></i> Shop #36-37, Ground Floor, Asiyana Shopping Center, Main Boulevard, Gulberg 3, Lahore</a>
+                    <a href="mailto:queryeasyvisa@gmail.com"><i class="fas fa-envelope me-2"></i> queryeasyvisa@gmail.com</a>
+                    <a href="tel:04235782678"><i class="fas fa-phone me-2"></i> 042-35782678 / 042-35873678</a>
+                    <a href="https://esender.mfmhost.net/vendor-console/whatsapp/contact/chat" target="_blank"><i class="fab fa-whatsapp me-2"></i> 0331-0277189</a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Quick Links</h4>
+                    <a href="index.html"><i class="fas fa-angle-right me-2"></i> Home</a>
+                    <a href="services.html"><i class="fas fa-angle-right me-2"></i> Services</a>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About US</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    <a href="packages.html"><i class="fas fa-angle-right me-2"></i> Packages</a>
+                    <a href="Book Now Assiment.HTML"><i class="fas fa-angle-right me-2"></i> Book Assiment</a>
+                </div>
+            </div>
+             <!-- Business Hours -->
+<div class="col-md-6 col-lg-6 col-xl-3">
+    <div class="footer-item d-flex flex-column text-white">
+        <h4 class="mb-4">Office Hours</h4>
+        <p><i class="fas fa-clock me-2"></i> Mon - Fri: 10:00 AM - 6:00 PM</p>
+        <p><i class="fas fa-clock me-2"></i> Sat: 10:00 AM - 5:00 PM</p>
+        <p><i class="fas fa-times-circle me-2"></i> Sunday: Closed</p>
+    </div>
+</div>          
+
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center pt-4 mt-4 border-top border-light">
+            <p class="mb-0 text-white" style="background-color: #A8571F;">&copy; 2025 Real Easy Visa. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+
+        // Initialize AOS
+        AOS.init();
+        
+        // Form submission handler
+        document.getElementById("visaForm").addEventListener("submit", function(e) {
+            e.preventDefault();
+
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+
+            doc.setFontSize(16);
+            doc.text("Visa Guidance / Assessment Form", 20, 20);
+
+            const fields = [
+                "name","email","visaCountry","visaType","phone","address",
+                "packageType","packageAmount","packageDuration","date","time","callType","message"
+            ];
+
+            let y = 40;
+            fields.forEach(id => {
+                let value = document.getElementById(id).value;
+                doc.setFontSize(12);
+                doc.text(`${id}: ${value}`, 20, y);
+                y += 10;
+            });
+
+            doc.save("Visa_Assessment_Form.pdf");
+
+            document.getElementById("successMessage").classList.remove("d-none");
+        });
+        
+    </script>
+
+    <script>
+    const modal = document.getElementById("consultationModal");
+    const closeBtn = document.getElementById("closeConsultation");
+
+    // Open automatically on page load
+    window.onload = () => {
+      modal.style.display = "flex";
+    };
+
+    // Close modal
+    closeBtn.onclick = () => {
+      modal.style.display = "none";
+    };
+
+    // Click outside to close
+    window.onclick = (e) => {
+      if (e.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+  <script>
+        // Add hover effect to video cards
+        $(document).ready(function() {
+            $('.blog-item').hover(
+                function() {
+                    $(this).find('.video-placeholder').css('opacity', '1');
+                },
+                function() {
+                    $(this).find('.video-placeholder').css('opacity', '0');
+                }
+            );
+        });
+    </script>
+   <style>
+  /* Visa Immigration Cards */
+.visa-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.visa-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.visa-card img {
+  transition: transform 0.5s ease;
+}
+.visa-card:hover img {
+  transform: scale(1.1);
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.book-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 18px;
+  background: #A8571F;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.book-btn:hover {
+  background: #873e16;
+  transform: scale(1.05);
+  color: #fff;
+}
+   </style>
+
+   
+  
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+     <script>
+     window.addEventListener("scroll", function () {
+      const socialBar = document.getElementById("socialBar");
+      if (window.scrollY > 50) {
+        socialBar.style.transform = "translateY(0)";
+        socialBar.style.opacity = "1";
+      } else {
+        socialBar.style.transform = "translateY(80px)";
+        socialBar.style.opacity = "0";
+      }
+    });
+
+     </script>
+<script>
+window.addEventListener("DOMContentLoaded", function () {
+    let storedVideos = JSON.parse(localStorage.getItem("videos")) || [];
+    const videoRow = document.querySelector(".row.g-4"); // videos wali row
+
+    storedVideos.forEach(video => {
+        const videoCard = document.createElement("div");
+        videoCard.className = "col-lg-4 col-md-6";
+        videoCard.innerHTML = `
+            <div class="blog-item shadow rounded bg-white h-100">
+                <div class="ratio ratio-16x9 video-container">
+                    <iframe src="${video.embedUrl}" 
+                        title="${video.title}" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
+                </div>
+                <div class="p-4">
+                    <h5 class="text-dark mt-2">${video.title}</h5>
+                    <p class="small text-muted">${video.description}</p>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <span class="badge bg-primary">${video.category}</span>
+                        <a href="${video.url}" target="_blank" class="btn btn-sm btn-outline-primary">Watch Full</a>
+                    </div>
+                </div>
+            </div>
+        `;
+        videoRow.prepend(videoCard); // Latest video upar dikhana
+    });
+});
+</script>
+<script>
+  // Agar user login nahi hai to redirect karega
+  const isLoggedIn = sessionStorage.getItem("isLoggedIn");
+
+  if (!isLoggedIn) {
+    // Yahan login.html pe bhejna hai
+    if (!window.location.href.includes("index.html")) {
+      window.location.href = "login.html";
+    }
+  }
+</script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

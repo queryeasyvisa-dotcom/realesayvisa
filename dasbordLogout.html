@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Logging out...</title>
+  <link rel="stylesheet" href="css/dashbord style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+
+    .logout-box {
+      background: #fff;
+      padding: 30px 26px;
+      border-radius: 12px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .loader {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 5px solid #eee;
+      border-top-color: #A8571F;
+      animation: spin 1s linear infinite;
+      margin: 20px auto;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    h2 { color: #A8571F; margin: 10px 0; }
+    p { color: #555; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <div class="logout-box">
+    <div class="loader"></div>
+    <h2>Logging out...</h2>
+    <p>You will be redirected to login page.</p>
+  </div>
+
+  <script>
+    // --- Clear session & local storage ---
+    sessionStorage.clear();
+    localStorage.clear();
+
+    // --- Clear all cookies ---
+    document.cookie.split(";").forEach(function(c) {
+      document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/");
+    });
+
+    // --- Redirect to login page (admin.html) after 1.8 seconds ---
+    setTimeout(() => {
+      window.location.href = 'admin.html';
+    }, 1800);
+  </script>
+</body>
+</html>

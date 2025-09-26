@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Login - Real Easy Visa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: lightcyan;
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      background: #fdfcfc;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.4s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    }
+
+    /* Left Side */
+    .left {
+      flex: 1;
+      background: url("img/login-bg.jpg") no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      color: black;
+      text-align: center;
+    }
+
+    .left img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      font-size: 26px;
+      font-weight: 600;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    /* Right Side */
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    .form-control:hover {
+      border-color: #A8571F;
+      box-shadow: 0 0 8px rgba(168, 87, 31, 0.5);
+    }
+
+    .form-control:focus {
+      border-color: #080838;
+      box-shadow: 0 0 8px rgba(8, 8, 56, 0.5);
+      outline: none;
+    }
+
+    .btn {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .btn-login {
+      background: #A8571F;
+      color: #fff;
+    }
+
+    .btn-login:hover { background:#080838; }
+
+    .text-center { text-align: center; }
+    .small-text { font-size: 13px; margin-top: 10px; color: #666; }
+  </style>
+</head>
+<body>
+
+ <div class="container">
+  <!-- Left Side -->
+  <div class="left">
+    <img src="img/NEW LOGO EASY VISA copy.png" alt="Company Logo">
+    <h2 class="text-dark">Real Easy Visa</h2>
+  </div>
+
+  <!-- Right Side (Form) -->
+  <div class="right">
+    <h3>Admin Login</h3>
+
+    <form id="adminLoginForm">
+      <input type="email" id="adminEmail" class="form-control" placeholder="Admin Email" required>
+      <input type="password" id="adminPassword" class="form-control" placeholder="Password" required>
+      
+      <!-- Two Login Buttons -->
+      <button type="button" class="btn btn-login" onclick="redirectTo('dashboard')">Login Dashboard</button>
+      <button type="button" class="btn btn-login" onclick="redirectTo('website')">Login Website</button>
+    </form>
+  </div>
+</div>
+
+
+<script>
+  function redirectTo(target) {
+    const email = document.getElementById("adminEmail").value.trim();
+    const password = document.getElementById("adminPassword").value;
+
+    // Simple login check (Demo only)
+    if(email === "admin@realeasyvisa.com" && password === "admin123"){
+      alert("✅ Login Successful!");
+      if(target === "dashboard"){
+        window.location.href = "admin dashboard.html"; 
+      } else if(target === "website"){
+        window.location.href = "index.html"; // apni website ka home page
+      }
+    } else {
+      alert("❌ Invalid Admin Credentials!");
+    }
+  }
+</script>
+
+</body>
+</html>

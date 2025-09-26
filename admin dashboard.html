@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Dashboard - Real Easy Visa</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="css/dashbord style.css">
+</head>
+<body>
+  <div id="sidebar">
+    <div class="brand">Real Easy Visa</div>
+    <a href="admin dashboard.html" class="active">Dashboard</a>
+    <a href="dashboard services.html">Services</a>
+    <a href="dashboard courses.html">Courses</a>
+    <a href="dashboard umrah.html">Umrah</a>
+    <a href="dashboard videos.html">Videos</a>
+    <a href="dashboard Analytics.html">Analytics</a>
+    <a href="dashboard Assessment Book.html">Assessment Book</a>
+    <a href="dashboard settings.html">Settings</a>
+    <a href="dasbordLogout.html">Logout</a>
+  </div>
+
+  <main>
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:8px">
+        <div class="search-bar"><input placeholder="Search..." /></div>
+        <button id="themeToggle" class="theme-toggle">Dark</button>
+      </div>
+      <div class="admin-info"><strong>Admin User</strong><span id="loginTime"></span></div>
+    </div>
+
+    <div class="content">
+      <h1>Dashboard Overview</h1>
+
+      <div class="cards">
+        <div class="card"><h3>Work Visa</h3><div class="stat-value">850</div><div class="small">New:45</div></div>
+        <div class="card"><h3>Visit Visa</h3><div class="stat-value">1200</div><div class="small">New:78</div></div>
+        <div class="card"><h3>Courses</h3><div class="stat-value">630</div><div class="small">Enrolled:43</div></div>
+        <div class="card"><h3>Umrah & Hajj</h3><div class="stat-value">960</div><div class="small">New:80</div></div>
+      </div>
+
+      <div style="margin-top:18px" class="charts">
+        <div class="chart-container">
+          <h3>Services Performance (bar)</h3>
+          <div class="canvas-wrap"><canvas id="servicesChart"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>Monthly Growth (line)</h3>
+          <div class="canvas-wrap"><canvas id="growthChart"></canvas></div>
+        </div>
+        <div class="chart-container">
+          <h3>Visa Share (donut)</h3>
+          <div class="canvas-wrap"><canvas id="visaPieChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

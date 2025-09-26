@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Services Management</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="css/dashbord style.css">
+</head>
+<body>
+  <div id="sidebar">
+    <div class="brand">Real Easy Visa</div>
+    <a href="admin dashboard.html">Dashboard</a>
+    <a href="dashboard services.html" class="active">Services</a>
+    <a href="dashboard courses.html">Courses</a>
+    <a href="dashboard umrah.html">Umrah</a>
+    <a href="dashboard videos.html">Videos</a>
+    <a href="dashboard Analytics.html">Analytics</a>
+    <a href="dashboard Assessment Book.html">Assessment Book</a>
+    <a href="dashboard settings.html">Settings</a>
+    <a href="dashboard Logout.html">Logout</a>
+  </div>
+  <main>
+    <div class="topbar">
+      <div class="search-bar"><input placeholder="Search..." /></div>
+      <div class="admin-info"><strong>Admin User</strong><span id="loginTime"></span></div>
+    </div>
+
+    <div class="content">
+      <h1>Services Management</h1>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Work Visa</h3><p>Comprehensive work visa services.</p>
+          <div class="service-stats">
+            <div><div class="stat-value">850</div><div class="small">Total</div></div>
+            <div><div class="stat-value">45</div><div class="small">This Month</div></div>
+            <div><div class="stat-value">12</div><div class="small">Pending</div></div>
+          </div>
+        </div>
+        <div class="service-card">
+          <h3>Visit Visa</h3><p>Tourist and family visit visa.</p>
+          <div class="service-stats">
+            <div><div class="stat-value">1200</div><div class="small">Total</div></div>
+            <div><div class="stat-value">78</div><div class="small">This Month</div></div>
+            <div><div class="stat-value">23</div><div class="small">Pending</div></div>
+          </div>
+        </div>
+        <div class="service-card">
+          <h3>Platinum Program</h3><p>Premium immigration services.</p>
+          <div class="service-stats">
+            <div><div class="stat-value">320</div><div class="small">Total</div></div>
+            <div><div class="stat-value">22</div><div class="small">This Month</div></div>
+            <div><div class="stat-value">5</div><div class="small">Pending</div></div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Recent Applications</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Service</th><th>Name</th><th>Date</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td>APP-2023-001</td><td>Work Visa</td><td>John Smith</td><td>2023-10-15</td><td>Approved</td><td><button class="btn">View</button></td></tr>
+          <tr><td>APP-2023-002</td><td>Visit Visa</td><td>Maria</td><td>2023-10-14</td><td>Pending</td><td><button class="btn">View</button></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Add New Service</h2>
+      <div class="card">
+        <form id="serviceForm">
+          <div class="form-row">
+            <div class="form-group"><label>Service Name</label><input id="serviceName" required></div>
+            <div class="form-group"><label>Category</label><select id="serviceCategory"><option>Visa Services</option><option>Immigration</option></select></div>
+          </div>
+          <div class="form-group"><label>Description</label><textarea id="serviceDescription" rows="3"></textarea></div>
+          <button class="btn" type="submit">Add Service</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

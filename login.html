@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Real Easy Visa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background: lightcyan;
+    }
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+   background: #fdfcfc;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  transition: all 0.4s ease; /* Smooth animation */
+}
+
+.container:hover {
+  transform: translateY(-10px) scale(1.02); /* Lift + zoom effect */
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25); /* Deeper shadow */
+}
+
+    /* Left Side */
+    .left {
+      flex: 1;
+      background: url("img/login-bg.jpg") no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px;
+      color: black;
+      text-align: center;
+    }
+
+    .left img {
+      width: 120px;
+      margin-bottom: 20px;
+    }
+
+    .left h2 {
+      font-size: 26px;
+      font-weight: 600;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+
+    /* Right Side */
+    .right {
+      flex: 1;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .right h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    .form-control {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 14px;
+    }
+
+    .btn {
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-login {
+      background: #A8571F;
+      color: #fff;
+      margin-bottom: 15px;
+    }
+    .btn-login:hover { background:#080838; }
+
+    .btn-google {
+      background: #A8571F;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+    .btn-google:hover { background: #b7352a; }
+
+    .btn-facebook {
+      background: #080838;
+      color: #fff;
+    }
+    .btn-facebook:hover { background: #314a86; }
+
+    .text-center { text-align: center; }
+    .small-text { font-size: 13px; margin-top: 10px; color: #666; }
+    a { text-decoration: none; color: #007bff; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Left Side -->
+    <div class="left">
+      <img src="img/NEW LOGO EASY VISA copy.png" alt="Company Logo">
+      <h2>Real Easy Visa</h2>
+    </div>
+
+    <!-- Right Side (Form) -->
+    <div class="right">
+      <h3>Login to Your Account</h3>
+
+      <input type="email" class="form-control" placeholder="Email" required>
+      <input type="password" class="form-control" placeholder="Password" required>
+
+      <!-- Login Button with Link -->
+      <button class="btn btn-login w-100" onclick="window.location.href='index.html'">Login</button>
+
+      <!-- Add FontAwesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<div class="social-login">
+  <p class="text-center small-text">Or Sign up with</p>
+  
+  <button type="button" class="btn-social google">
+    <i class="fab fa-google"></i> Continue with Google
+  </button>
+  
+  <button type="button" class="btn-social facebook">
+    <i class="fab fa-facebook-f"></i> Continue with Facebook
+  </button>
+</div>
+      <p class="text-center small-text">
+        Don’t have an account? <a href="registraion from.html">Sign Up</a>
+      </p>
+    </div>
+  </div>
+  <style>
+    .social-login {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-social i {
+  font-size: 18px;
+}
+
+.btn-social.google {
+  background: #db4437;
+  color: #fff;
+}
+
+.btn-social.google:hover {
+  background: #b33428;
+}
+
+.btn-social.facebook {
+  background: #1877f2;
+  color: #fff;
+}
+
+.btn-social.facebook:hover {
+  background: #0d5fd1;
+}
+.form-control {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 14px;
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+.form-control:hover {
+  border-color: #A8571F;   /* Border color on hover */
+  box-shadow: 0 0 8px rgba(168, 87, 31, 0.5); /* Soft shadow */
+}
+
+.form-control:focus {
+  border-color: #080838;  /* Focused border */
+  box-shadow: 0 0 8px rgba(8, 8, 56, 0.5);
+  outline: none;          /* Remove default outline */
+}
+
+
+  </style>
+<script>
+    document.querySelector(".google").addEventListener("click", function(){
+  alert("🔑 Google Login integration required (use Firebase or OAuth).");
+  // Example: window.location.href = "google-auth-api-url";
+});
+
+document.querySelector(".facebook").addEventListener("click", function(){
+  alert("🔑 Facebook Login integration required (use Facebook SDK).");
+  // Example: window.location.href = "facebook-auth-api-url";
+});
+
+</script>
+</body>
+</html>

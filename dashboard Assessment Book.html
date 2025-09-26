@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assessment Book</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<link rel="stylesheet" href="css/dashbord style.css">
+</head>
+<body>
+  <div id="sidebar"><div class="brand">Real Easy Visa</div>
+    <a href="admin dashboard.html">Dashboard</a><a href="dashboard services.html">Services</a><a href="dashboard courses.html">Courses</a>
+    <a href="dashboard umrah.html">Umrah</a><a href="dashboard videos.html">Videos</a><a href="dashboard Analytics.html">Analytics</a>
+    <a href="dashboard Assessment Book.html" class="active">Assessment Book</a><a href="dashboard settings.html">Settings</a><a href="dashboard Logout.html">Logout</a>
+  </div>
+  <main>
+    <div class="topbar"><div class="search-bar"><input placeholder="Search customer..."></div><div class="admin-info"><strong>Admin User</strong><span id="loginTime"></span></div></div>
+    <div class="content">
+      <h1>Customer Assessments</h1>
+      <div class="filter-row"><select><option>Last 30 days</option><option>2024</option><option>2023</option></select><button class="btn secondary">Apply</button></div>
+
+      <div class="charts">
+        <div class="chart-container"><h3>Assessments (line)</h3><div class="canvas-wrap"><canvas id="assessmentChart"></canvas></div></div>
+        <div class="chart-container"><h3>Assessment Status (donut)</h3><div class="canvas-wrap"><canvas id="assessmentPie"></canvas></div></div>
+      </div>
+
+      <h2>Recent Assessments</h2>
+      <table>
+        <thead><tr><th>ID</th><th>Customer</th><th>Date</th><th>Score</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>AS-001</td><td>Ali</td><td>2025-01-10</td><td>82</td><td>Pass</td></tr>
+          <tr><td>AS-002</td><td>Sana</td><td>2025-01-08</td><td>91</td><td>Pass</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+  <script>
+    // small pie demo for assessment
+    document.addEventListener('DOMContentLoaded',function(){
+      if(window.Chart){
+        new Chart(document.getElementById('assessmentPie').getContext('2d'),{type:'doughnut',data:{labels:['Pass','Fail'],datasets:[{data:[76,24],backgroundColor:['#080838','#c24e00']}]},options:{responsive:true}});
+      }
+    });
+  </script>
+</body>
+</html>
